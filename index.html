@@ -2,32 +2,35 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Задача 1</title>
-  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-  <script src="script.js" defer></script>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог фильмов</title>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <form id="film-form">
-        <label for="title">Название:</label><br />
+
+    <form class="form" id="film-form">
+        <h1 class="form__title">Каталог фильмов</h1>
+        <label for="title">Название:</label>
         <div class="input-wrap">
-          <input type="text" id="title" name="title" /><br />
+            <input type="text" id="title" name="title" />
         </div>
-        <label for="genre">Жанр:</label><br />
+        <label for="genre">Жанр:</label>
         <div class="input-wrap">
-          <input type="text" id="genre" name="genre" /><br />
+            <input type="text" id="genre" name="genre" />
         </div>
-        <label for="releaseYear">Год:</label><br />
+        <label for="releaseYear">Год:</label>
         <div class="input-wrap">
-          <input type="number" id="releaseYear" name="releaseYear" /><br />
+            <input type="number" id="releaseYear" name="releaseYear" />
         </div>
         <input type="checkbox" id="isWatched" name="isWatched" />
-        <label for="isWatched">Успели посмотреть?</label><br />
-        <button class="form-btn" type="submit">Submit</button>
+        <label for="isWatched">Успели посмотреть?</label>
+        <button class="form-btn" type="submit">Сохранить</button>
     </form>
+
     <div class="filter-inner">
         <div class="filter-wrap">
             <input type="text" id="filter-title" placeholder="Название фильма">
@@ -40,23 +43,25 @@
                 <option class="option-releaseYear" value="releaseYear">Год релиза</option>
                 <option class="option-isWatched" value="isWatched">Просмотрены</option>
             </select>
+            <button class="btn-delateAll" id="btn-delateAll">Удалить всё</button>
         </div>
-        <button class="btn-delateAll" id="btn-delateAll">Удалить всё</button>
     </div>
-    <table id="film-table">
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Жанр</th>
-                <th>Год</th>
-                <th>Успели посмотреть?</th>
-                <th>Действие</th>
-            </tr>
-        </thead>
-        <tbody id="film-tbody">
-            <!-- Rows will be inserted here -->
-        </tbody>
-    </table>
+
+        <table id="film-table">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Жанр</th>
+                    <th>Год</th>
+                    <th>Успели посмотреть?</th>
+                    <th>Действие</th>
+                </tr>
+            </thead>
+            <tbody id="film-tbody">
+                <!-- Rows will be inserted here -->
+            </tbody>
+        </table>
+
 </body>
 
 </html>
