@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #999;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#film-form input[type="text"], 
+#film-form input[type="number"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form input[type="checkbox"] {
+  margin-bottom: 20px;
+}
+
+.form-btn {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.form-btn:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 5px #999;
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+td {
+  vertical-align: top;
+}
+
+.filter-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.filter-wrap {
+  max-width: 900px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #999;
+}
+
+.filter-wrap input,
+select {
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.btn-delateAll {
+  color: #fff;
+  background-color: red;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-wrap {
+  margin-bottom: 15px;
+}
